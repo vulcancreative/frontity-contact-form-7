@@ -116,6 +116,8 @@ const MyForm = {
 					// Once the email is sent, clear the form fields.
 					state.cf7.forms[ id ].inputVals = {};
 
+          // Refresh view
+          window.location.reload();
 				} else if ( 'validation_failed' === body.status || 'mail_failed' === body.status ) {
 
 					if(body.invalid_fields){
