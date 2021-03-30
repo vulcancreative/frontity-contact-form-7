@@ -89,10 +89,12 @@ const MyForm = {
 				const url = `${state.source.api}contact-form-7/v1/contact-forms/${ id }/feedback`;
 
 				// Post Request.
+        console.log("POSTing");
 				const res  = await fetch( url, {
 					method: 'POST',
 					body: formData
 				} );
+        console.log("POSTed");
 				const body = await res.json();
 				let invalidFieldsObj = {};
 
@@ -116,8 +118,6 @@ const MyForm = {
 					// Once the email is sent, clear the form fields.
 					state.cf7.forms[ id ].inputVals = {};
 
-          // Refresh view
-          window.location.reload();
 				} else if ( 'validation_failed' === body.status || 'mail_failed' === body.status ) {
 
 					if(body.invalid_fields){
