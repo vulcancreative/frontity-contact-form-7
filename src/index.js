@@ -132,9 +132,7 @@ const MyForm = {
 						state.cf7.forms[ id ].invalidFields = invalidFieldsObj;
 					}
 
-          /*
-					state.cf7.forms[ id ].status = "failed";
-          */
+					state.cf7.forms[ id ].state = "failed";
 
 					// Populate errors from the response so React components
 					// can see them and re-render appropriately

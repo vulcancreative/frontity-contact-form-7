@@ -40,6 +40,8 @@ const Form = ( { state, actions, id, children, className, method } ) => {
 				{ children }
 			</FormElement>
 			{ state.cf7.forms[ id ].loading ? <Processing>Processing...</Processing> : <Message/> }
+			{ state.cf7.forms[ id ].state == "sent" ? <Processing>Message Sent!</Processing> : <Message/> }
+			{ state.cf7.forms[ id ].state == "failed" ? <Processing>Hmm, there seems to be an error...</Processing> : <Message/> }
 		</FormIdContext.Provider>
 	)
 };
