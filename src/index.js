@@ -110,10 +110,10 @@ const MyForm = {
           console.log("mail_sent successfully");
           // window.location.reload();
 
-					state.cf7.forms[ id ].status  = "sent";
-          /*
+					// state.cf7.forms[ id ].status  = "sent";
 					state.cf7.forms[ id ].message = body.message;
 
+          /*
 					// Once the email is sent, clear the form fields.
 					state.cf7.forms[ id ].inputVals = {};
           */
