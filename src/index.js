@@ -89,13 +89,11 @@ const MyForm = {
 				const url = `${state.source.api}contact-form-7/v1/contact-forms/${ id }/feedback`;
 
 				// Post Request.
-        console.log("POSTing");
 				const res  = await fetch( url, {
 					method: 'POST',
 					body: formData
 				} );
 				const body = await res.json();
-        console.log("POSTed", body);
 				let invalidFieldsObj = {};
 
 				// Clear previous message.
@@ -123,7 +121,6 @@ const MyForm = {
 				} else if ( 'validation_failed' === body.status || 'mail_failed' === body.status ) {
           console.log(`failed with status: "${body.status}"`);
 
-          /*
 					if(body.invalid_fields){
 						body.invalid_fields.forEach( item => {
 
@@ -137,12 +134,13 @@ const MyForm = {
 						state.cf7.forms[ id ].invalidFields = invalidFieldsObj;
 					}
 
+          /*
 					state.cf7.forms[ id ].status = "failed";
+          */
 
 					// Populate errors from the response so React components
 					// can see them and re-render appropriately
 					state.cf7.forms[ id ].validationErrors = body.message;
-          */
 
 				}
 			}
