@@ -110,6 +110,7 @@ const MyForm = {
 				// Populate state with the errors, or thank-you message...
 				if ( 'mail_sent' === body.status ) {
           console.log("mail_sent successfully");
+          window.location.reload();
 
           /*
 					state.cf7.forms[ id ].status  = "sent";
