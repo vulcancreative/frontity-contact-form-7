@@ -94,8 +94,9 @@ const MyForm = {
 					method: 'POST',
 					body: formData
 				} );
-        console.log("POSTed");
 				const body = await res.json();
+        console.log("POSTed", body);
+        /*
 				let invalidFieldsObj = {};
 
 				// Clear previous message.
@@ -107,9 +108,7 @@ const MyForm = {
 					state.cf7.forms[ id ].invalidFields = {};
 				}
 
-				/**
-				 * Populate state with the errors, or thank-you message...
-				 */
+				// Populate state with the errors, or thank-you message...
 				if ( 'mail_sent' === body.status ) {
 
 					state.cf7.forms[ id ].status  = "sent";
@@ -135,14 +134,12 @@ const MyForm = {
 
 					state.cf7.forms[ id ].status = "failed";
 
-					/**
-					 * Populate errors from the response so React components
-					 * can see them and re-render appropriately
-					 */
+					// Populate errors from the response so React components
+					// can see them and re-render appropriately
 					state.cf7.forms[ id ].validationErrors = body.message;
 
 				}
-
+        */
 			}
 		}
 	}
