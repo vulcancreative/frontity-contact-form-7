@@ -107,18 +107,22 @@ const MyForm = {
 					state.cf7.forms[ id ].invalidFields = {};
 				}
 
-        /*
 				// Populate state with the errors, or thank-you message...
 				if ( 'mail_sent' === body.status ) {
+          console.log("mail_sent successfully");
 
+          /*
 					state.cf7.forms[ id ].status  = "sent";
 					state.cf7.forms[ id ].message = body.message;
 
 					// Once the email is sent, clear the form fields.
 					state.cf7.forms[ id ].inputVals = {};
+          */
 
 				} else if ( 'validation_failed' === body.status || 'mail_failed' === body.status ) {
+          console.log(`failed with status: "${body.status}"`);
 
+          /*
 					if(body.invalid_fields){
 						body.invalid_fields.forEach( item => {
 
@@ -137,9 +141,9 @@ const MyForm = {
 					// Populate errors from the response so React components
 					// can see them and re-render appropriately
 					state.cf7.forms[ id ].validationErrors = body.message;
+          */
 
 				}
-        */
 			}
 		}
 	}
