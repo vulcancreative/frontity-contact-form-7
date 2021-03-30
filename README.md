@@ -1,14 +1,8 @@
 # Frontity Contact Form 7 :art:
 
-[![Project Status: Active.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-![Stars](https://img.shields.io/github/stars/imranhsayed/frontity-contact-form-7?label=%E2%AD%90%20Stars)
-![Forks](https://img.shields.io/github/forks/imranhsayed/frontity-contact-form-7?color=%23ff69b4)
-![Contributors](https://img.shields.io/github/contributors/imranhsayed/frontity-contact-form-7?color=blue)
-[![Download counter](https://img.shields.io/npm/dt/frontity-contact-form-7.svg)](https://www.npmjs.com/package/frontity-contact-form-7.svg)
-
 :fire: Contact Form 7 package for Frontity.
 
-******* PLEASE STAR MY REPO TO SUPPORT OUR WORK 🙏 ******
+**\*\*\*** PLEASE STAR MY REPO TO SUPPORT OUR WORK 🙏 **\*\***
 
 Please follow me 🙏 on [twitter](https://twitter.com/imranhsayed) and github
 
@@ -17,12 +11,15 @@ Please follow me 🙏 on [twitter](https://twitter.com/imranhsayed) and github
 [Video](https://youtu.be/Sr4UFXhAqp0)
 
 # :video_camera: Demo CF7 Form
+
 ![](demo.gif)
 
 # :video_camera: Demo CF7 Form Email received
+
 ![](email-sent.gif)
 
-#### Below is the screentshot taken with Frontity mars theme with some added styles. The styles may look different for your Frontity theme. 
+#### Below is the screentshot taken with Frontity mars theme with some added styles. The styles may look different for your Frontity theme.
+
 ![](demo-pic.png)
 
 # How does it work?
@@ -57,7 +54,6 @@ Please follow me 🙏 on [twitter](https://twitter.com/imranhsayed) and github
 
 That's it! The package doesn't need any settings. You should be able to see the form in any page or post that contains one.
 
-
 ## More info :clipboard:
 
 This is the beta version. Some features will be added in the final release, like:
@@ -76,7 +72,6 @@ If you want to contribute to the package, you can do so following these simple s
 1. Submit the pull request! :)
 
 You can change the `state.source.api` setting on the `frontity.settings.js` file to point the project to your own WordPress if you want but please do not include those changes in your PR.
-
 
 ## Credits :white_flower:
 
