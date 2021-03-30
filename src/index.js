@@ -96,7 +96,6 @@ const MyForm = {
 				} );
 				const body = await res.json();
         console.log("POSTed", body);
-        /*
 				let invalidFieldsObj = {};
 
 				// Clear previous message.
@@ -108,6 +107,7 @@ const MyForm = {
 					state.cf7.forms[ id ].invalidFields = {};
 				}
 
+        /*
 				// Populate state with the errors, or thank-you message...
 				if ( 'mail_sent' === body.status ) {
 
