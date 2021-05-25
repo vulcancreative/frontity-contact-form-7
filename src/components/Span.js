@@ -1,6 +1,6 @@
 import React from 'react';
 import FormIdContext from "../context/FormIdContext";
-import { styled } from "frontity";
+import { connect, styled } from "frontity";
 
 /**
  * Span component
@@ -40,4 +40,4 @@ const NotValidTip = styled.span`
     display: block;
 `;
 
-export default Span;
+export default connect( Span );
