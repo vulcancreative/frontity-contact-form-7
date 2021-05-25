@@ -1,6 +1,5 @@
 import React from 'react';
 import FormIdContext from "../context/FormIdContext";
-import { connect } from "frontity";
 
 /**
  * HiddenInputs component
@@ -23,4 +22,4 @@ const HiddenInputs = ( { state, actions, inputProps } ) => {
 
 };
 
-export default connect( HiddenInputs );
+export default HiddenInputs;
